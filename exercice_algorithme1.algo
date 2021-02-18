@@ -1,0 +1,28 @@
+ALGORITHM algorithm_name
+
+VAR
+    chaine :STRING ;
+    countv : INTEGER := 0;
+    countw :INTEGER :=0 ;
+ 
+BEGIN
+    REPEAT
+        write ("tapez votre phrase");
+        read(chaine);
+    UNTIL (pos('',chaine):= 0 and (chaine [length(chaine)] :='.'));
+
+    WHILE (pos('',chaine <> 0 )) DO
+         countw := countw +1 ;
+        
+    END_WHILE
+    for (i:= 1 to length(chiane)) DO
+    IF chaine[i] in ['a','e','i','y','o'] THEN
+        countv := countv+1 ;
+    END_IF
+
+     write ("la longeur de la chaine est ",  length(chaine)); 
+
+     write ("le nombre de mots est  ",  countw); 
+
+     write ("le nombre des voyelles est ",  countv); 
+END
